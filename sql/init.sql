@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS expenses (
+    id SERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    amount DOUBLE PRECISION NOT NULL CHECK (amount > 0)
+);
